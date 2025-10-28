@@ -32,3 +32,26 @@ Provides containeration for consistent development, testing, and deployment envi
 #### CI/CD pipelines
 Automates testing and deployment, ensuring smooth integration and delivery of new code changes.
 
+## Database Design
+### Key Entities
+#### 1. Users
+- Fields: id, name, email, password, role, date_joined
+- Description: Represents users who can list, book, or review properties. A user can own multiple properties and make multiple bookings.
+#### 2. Properties
+- Fields: id, owner_id, title, description, location, price_per_night
+- Description: Represents listed properties. Each property is linked with one user and can have multiple bookings and reviews.
+#### 3. Bookings
+- Fields: id, user_id, property_id, check_in, check_out, total_price
+- Description: Represents reservations made by users. Each booking is linked to one user and one property.
+#### 4. Reviews
+- Fields: id, user_id, property_id, rating, comment, created_at
+- Description: Represents feedback left by users about a property. Each review belongs to one property and one user.
+#### 5. Payments
+- Fields: id, booking_id, amount, payment_method, status, transaction_date
+- Description: Represents payment transactions related to bookings. Each payment is tied to a specific booking.
+### Relationships
+- A **User** can own many **Properties**
+- A **Property** can have many **Bookings** and **Reviews**
+- A **Booking** belongs to one **User** and one **Property**.
+- A **Payment** belongs to one **Booking**.
+- A **User** can leave multiple **Reviews** on different **Properties**.
