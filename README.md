@@ -55,3 +55,27 @@ Automates testing and deployment, ensuring smooth integration and delivery of ne
 - A **Booking** belongs to one **User** and one **Property**.
 - A **Payment** belongs to one **Booking**.
 - A **User** can leave multiple **Reviews** on different **Properties**.
+## 4. Feature Breakdown
+
+### 1. API Documentation
+The backend APIs are documented using the **OpenAPI** standard and built with **Django REST Framework**, ensuring clear and consistent communication between the backend and frontend. **GraphQL** further enhances flexibility by enabling efficient and specific data queries.
+
+### 2. User Authentication
+Implements secure registration, login, and profile management for users through endpoints such as `/users/` and `/users/{user_id}/`. Authentication ensures data privacy and controlled access across the system.
+
+### 3. Property Management
+Enables users to create, update, retrieve, and delete property listings through endpoints like `/properties/` and `/properties/{property_id}/`. This forms the foundation for users to manage available accommodations.
+
+### 4. Booking System
+Handles the reservation process using endpoints `/bookings/` and `/bookings/{booking_id}/`. It supports creating, updating, and managing bookings, ensuring seamless user experience for check-ins and check-outs.
+
+### 5. Payment Processing
+Provides secure payment handling for booking transactions through the `/payments/` endpoint. Integrates payment validation and transaction tracking for a smooth and reliable booking experience.
+
+### 6. Review System
+Allows users to post and manage property reviews using endpoints like `/reviews/` and `/reviews/{review_id}/`. Reviews help maintain transparency and improve property credibility.
+
+### 7. Database Optimizations
+Implements **indexing** for quick data retrieval and **caching** to reduce database load, enhancing overall performance and response time.
+
+
