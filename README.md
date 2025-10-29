@@ -79,3 +79,14 @@ Allows users to post and manage property reviews using endpoints like `/reviews/
 Implements **indexing** for quick data retrieval and **caching** to reduce database load, enhancing overall performance and response time.
 
 
+## API Security
+
+Securing the backend APIs is crucial because it:
+
+- Protects sensitive user data from unauthorized access or breaches.  
+- Maintains trust between users and the platform.  
+- Prevents fraudulent activities and data manipulation.  
+- Safeguards payment transactions and financial information.  
+- Preserves user privacy and system integrity.  
+- Ensures the reliability and stability of backend operations.  
+
