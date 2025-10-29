@@ -90,3 +90,19 @@ Securing the backend APIs is crucial because it:
 - Preserves user privacy and system integrity.  
 - Ensures the reliability and stability of backend operations.  
 
+## 6. CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines help automate the software development process.
+
+**Importance of CI/CD Pipelines:**
+- Automate building, testing, and deployment of code changes.  
+- Improve code quality through continuous testing.  
+- Reduce deployment errors and manual workload.  
+- Speed up feature delivery and ensure consistent updates.  
+- Maintain reliability and stability across environments.  
+
+**Common Tools Used:**
+- **GitHub Actions:** Automates testing and deployment workflows.  
+- **Docker:** Ensures consistent environments across development and production.  
+- **CI/CD Services:** Other tools like Jenkins or Travis CI can also be integrated for automation.  
+
